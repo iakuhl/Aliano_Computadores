@@ -55,5 +55,5 @@ body { margin: 0; color: #212121; background: #fff; font-family: Arial, Helvetic
 .produto-rodape { min-height: 150px; padding: 58px 16px 28px; border-radius: 0 0 10px 10px; background: #fff; box-shadow: 5px 5px 15px rgba(0,0,0,.08); }
 .produto-rodape h4 { margin: 0 0 8px; color: #234f0c; font-size: 18px; }
 .produto-rodape h5 { margin: 0 0 18px; color: #877414; font-size: 17px; }
-.produto-rodape p { margin: 0; font-size:  16px; font-weight: 700; }
+.produto-rodape p { margin: 0; font-size:  16px; color: #990303; font-weight: 700; }
  @media (max-width: 600px) { .banner { padding: 0 20px 48px; } .banner-imagem { width: calc(50% + 40px); height: calc(50% + 96px); margin: 0 auto 40px;; object-fit: contain; } .formulario { margin: 48px 0; padding: 0 14px; } .formulario form { padding: 24px; } }
