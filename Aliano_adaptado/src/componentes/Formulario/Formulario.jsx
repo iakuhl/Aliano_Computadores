@@ -5,7 +5,7 @@ import Botao from "../Botao/Botao";
 import "./Formulario.css";
 
 export default function Formulario({ secoes, aoProdutoCadastrado }) {
-  const [produto, setProduto] = useState({ secao: "", marca: "", nome: "", preco: "", estado: "Novo" });
+  const [produto, setProduto] = useState({ secao: "", marca: "", nome: "", preco: "", estado: "Novo", imagem: "" });
   const [mensagem, setMensagem] = useState("");
   const marcas = ["HP", "Dell", "Positivo", "Asus", "Xing Ling genérico"];
 
@@ -34,6 +34,7 @@ export default function Formulario({ secoes, aoProdutoCadastrado }) {
         <ListaSuspensa label="Marca" itens={marcas} valor={produto.marca} aoAlterado={(valor) => altera("marca", valor)} />
         <CampoTexto label="Nome" placeholder="Digite o nome do produto" valor={produto.nome} aoAlterado={(valor) => altera("nome", valor)} />
         <CampoTexto label="Preço" placeholder="0,00" tipo="number" valor={produto.preco} aoAlterado={(valor) => altera("preco", valor)} />
+        <CampoTexto label="Imagem" placeholder="Cole a URL da imagem" tipo="url" valor={produto.imagem} aoAlterado={(valor) => altera("imagem", valor)} />
         <fieldset className="estado">
           <legend>Estado</legend>
           <label><input type="radio" name="estado" value="Novo" checked={produto.estado === "Novo"} onChange={() => altera("estado", "Novo")} /> Novo</label>
