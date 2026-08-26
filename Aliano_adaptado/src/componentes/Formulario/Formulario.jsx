@@ -30,11 +30,11 @@ export default function Formulario({ secoes, aoProdutoCadastrado }) {
     <section className="formulario">
       <form onSubmit={salva}>
         <h2>Dados do produto:</h2>
-        <ListaSuspensa label="Seção" itens={secoes} valor={produto.secao} aoAlterado={(valor) => altera("secao", valor)} />
-        <ListaSuspensa label="Marca" itens={marcas} valor={produto.marca} aoAlterado={(valor) => altera("marca", valor)} />
-        <CampoTexto label="Nome" placeholder="Digite o nome do produto" valor={produto.nome} aoAlterado={(valor) => altera("nome", valor)} />
-        <CampoTexto label="Preço" placeholder="0,00" tipo="number" valor={produto.preco} aoAlterado={(valor) => altera("preco", valor)} />
-        <CampoTexto label="Imagem" placeholder="Cole a URL da imagem" tipo="url" valor={produto.imagem} aoAlterado={(valor) => altera("imagem", valor)} />
+        <ListaSuspensa label="Qual o tipo do produto?" itens={secoes} valor={produto.secao} aoAlterado={(valor) => altera("secao", valor)} />
+        <ListaSuspensa label="Qual a marca dessa bodega?" itens={marcas} valor={produto.marca} aoAlterado={(valor) => altera("marca", valor)} />
+        <CampoTexto label="Nome bem original do seu produto " placeholder="Digite o nome do produto" valor={produto.nome} aoAlterado={(valor) => altera("nome", valor)} />
+        <CampoTexto label="Quanto vai custar essa sucata? " placeholder="0,00" tipo="number" valor={produto.preco} aoAlterado={(valor) => altera("preco", valor)} />
+        <CampoTexto label="Bota uma foto da marca agora" placeholder="Cole a URL da imagem" tipo="url" valor={produto.imagem} aoAlterado={(valor) => altera("imagem", valor)} />
         <fieldset className="estado">
           <legend>Estado</legend>
           <label><input type="radio" name="estado" value="Novo" checked={produto.estado === "Novo"} onChange={() => altera("estado", "Novo")} /> Novo</label>
