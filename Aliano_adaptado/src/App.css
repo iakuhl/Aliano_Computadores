@@ -40,4 +40,4 @@ body { margin: 0; color: #212121; background: #fff; font-family: Arial, Helvetic
 .produto-rodape h4 { margin: 0 0 8px; color: #3447d6; font-size: 18px; }
 .produto-rodape h5 { margin: 0 0 18px; font-size: 17px; }
 .produto-rodape p { margin: 0; font-size: 16px; font-weight: 700; }
-@media (max-width: 600px) { .formulario { margin: 48px 0; padding: 0 14px; } .formulario form { padding: 24px; } .banner { padding: 42px 20px 48px; } }
+ @media (max-width: 600px) { .banner { padding: 0 20px 48px; } .banner-imagem { width: calc(100% + 40px); height: 160px; margin: 0 -20px 30px; } .formulario { margin: 48px 0; padding: 0 14px; } .formulario form { padding: 24px; } }
