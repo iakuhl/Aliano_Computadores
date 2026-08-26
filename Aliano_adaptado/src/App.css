@@ -5,7 +5,7 @@ body { margin: 0; color: #212121; background: #fff; font-family: Arial, Helvetic
 .banner { padding: 0 24px 60px; text-align: center; color: #fff; background: linear-gradient(110deg, #3447d6, #6578ef); overflow: hidden;}
 .banner p { margin: 0 0 12px; font-size: 14px; font-weight: 700; letter-spacing: 2px; }
 .banner h1 { max-width: 720px; margin: auto; font-size: clamp(32px, 6vw, 58px); line-height: 1.03; }
-.banner-imagem { display: block; width: calc(100% + 48px); height: 230px; margin: 0 -24px 40px; object-fit: cover;}
+.banner-imagem { display: block; width: calc(100% + 48px); height: auto; margin: 0 -24px 40px; object-fit: contain;}
 
 /* CSS FORMS */
 .formulario { display: flex; justify-content: center; margin: 80px 0; padding: 0 20px; }
@@ -40,4 +40,4 @@ body { margin: 0; color: #212121; background: #fff; font-family: Arial, Helvetic
 .produto-rodape h4 { margin: 0 0 8px; color: #3447d6; font-size: 18px; }
 .produto-rodape h5 { margin: 0 0 18px; font-size: 17px; }
 .produto-rodape p { margin: 0; font-size: 16px; font-weight: 700; }
- @media (max-width: 600px) { .banner { padding: 0 20px 48px; } .banner-imagem { width: calc(100% + 40px); height: calc(100% + 96px); margin: 0 -20px 30px; } .formulario { margin: 48px 0; padding: 0 14px; } .formulario form { padding: 24px; } }
+ @media (max-width: 600px) { .banner { padding: 0 20px 48px; } .banner-imagem { width: calc(100% + 40px); height: auto; margin: 0 -20px 30px; object-fit: contain; } .formulario { margin: 48px 0; padding: 0 14px; } .formulario form { padding: 24px; } }
