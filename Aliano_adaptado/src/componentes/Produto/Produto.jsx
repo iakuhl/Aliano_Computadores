@@ -1,7 +1,9 @@
-export default function Produto({ nome, marca, preco, estado, cor }) {
+export default function Produto({ nome, marca, preco, estado, imagem, cor }) {
   return (
     <article className="produto">
-      <div className="produto-cabecalho" style={{ backgroundColor: cor }}><span>●</span></div>
+      <div className="produto-cabecalho" style={{ backgroundColor: cor }}>
+        <img src={imagem} alt={nome} />
+      </div>
       <div className="produto-rodape">
         <h4>{nome}</h4>
         <h5>{marca}</h5>
