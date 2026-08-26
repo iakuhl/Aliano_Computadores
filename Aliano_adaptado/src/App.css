@@ -5,7 +5,7 @@ body { margin: 0; color: #212121; background: #fff; font-family: Arial, Helvetic
 .banner { padding: 0 24px 60px; text-align: center; color: #fff; background: linear-gradient(110deg, #3447d6, #6578ef); overflow: hidden;}
 .banner p { margin: 0 0 12px; font-size: 14px; font-weight: 700; letter-spacing: 2px; }
 .banner h1 { max-width: 720px; margin: auto; font-size: clamp(32px, 6vw, 58px); line-height: 1.03; }
-.banner-imagem { display: block; width: calc(100% + 48px); height: calc(100% + 96px); margin: 0 -24px 40px; object-fit: contain;}
+.banner-imagem { display: block; width: calc(100% + 48px); height: calc(100% + 96px); margin: 0 -24px 40px; object-fit: cover;}
 
 /* CSS FORMS */
 .formulario { display: flex; justify-content: center; margin: 80px 0; padding: 0 20px; }
