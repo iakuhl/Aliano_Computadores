@@ -1,23 +1,37 @@
 /* Estrutura básica inspirada no site original: banner, formulário, áreas e cartões. */
 * { box-sizing: border-box; }
 body { margin: 0; color: #212121; background: #fff; font-family: Arial, Helvetica, sans-serif; }
+/* CSS BANNER */
 .banner { padding: 0 24px 60px; text-align: center; color: #fff; background: linear-gradient(110deg, #3447d6, #6578ef); overflow: hidden;}
 .banner p { margin: 0 0 12px; font-size: 14px; font-weight: 700; letter-spacing: 2px; }
 .banner h1 { max-width: 720px; margin: auto; font-size: clamp(32px, 6vw, 58px); line-height: 1.03; }
+.banner-imagem { display: block; width: calc(100% + 48px); height: 230px; margin: 0 -24px 40px; object-fit: cover;}
+
+/* CSS FORMS */
 .formulario { display: flex; justify-content: center; margin: 80px 0; padding: 0 20px; }
 .formulario form { width: 100%; max-width: 900px; padding: 26px 64px; background: #f2f2f2; border-radius: 20px; box-shadow: 8px 8px 16px rgba(0,0,0,.08); }
 .formulario h2 { margin: 0 0 26px; font-size: 32px; }
+
+/* CSS CAMPOS DE TEXTO */
 .campo-texto, .lista-suspensa { margin: 24px 0; }
 .campo-texto label, .lista-suspensa label, .estado legend { display: block; margin-bottom: 8px; font-size: 20px; font-weight: 700; }
 .campo-texto input, .lista-suspensa select { width: 100%; padding: 18px; border: 0; border-radius: 4px; background: #fff; box-shadow: 10px 10px 30px rgba(0,0,0,.06); font-size: 20px; }
+
 .estado { margin: 24px 0; padding: 0; border: 0; }
 .estado label { margin-right: 22px; font-size: 18px; }
 .estado input { accent-color: #3447d6; }
+
 .mensagem { color: #3447d6; font-weight: 700; }
+
+/* CSS BOTOES */
 .botao { margin: 32px 0 0; padding: 18px 26px; border: 0; border-radius: 10px; background: #3447d6; color: #fff; font-size: 18px; font-weight: 700; cursor: pointer; }
 .botao:hover { background: #2838b8; }
+
+/* CSS AREAS */
 .area { padding: 32px; text-align: center; }
 .area h3 { display: inline-block; margin: 0; padding-bottom: 8px; border-bottom: 4px solid; font-size: 32px; }
+
+/* CSS PRODUTOS */
 .produtos { display: flex; justify-content: space-around; gap: 32px; margin-top: 32px; flex-wrap: wrap; }
 .produto { width: 280px; }
 .produto-cabecalho { height: 115px; border-radius: 10px 10px 0 0; }
