@@ -8,7 +8,7 @@ export default function Banner() {
     <header className="banner">
       <img className="banner-imagem" src={bannerImagem} alt="Banner Aliano Computadores" />
       <p>ALIANO COMPUTADORES</p>
-      <h1>Cadastro de produtos de informática</h1>
+      <h1>Simplesmente o site mais foda de cadástro de informática ponto com ponto br</h1>
     </header>
   );
 }
